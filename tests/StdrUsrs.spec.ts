@@ -27,5 +27,17 @@ test ('add to cart', async ({page}) => {
 })
 
 test('click on product and have product details', async ({page}) => {
+    await page.locator('[data-test="item-4-title-link"]').click();
     await expect(page.locator('.inventory_details_name')).toHaveText('Sauce Labs Backpack');
+})
+
+test('sort from Z to A', async ({page}) => {
+    await page.locator('[data-test="product-sort-container"]').selectOption('Name (Z to A)');
+    const titlesLocator = page.locator('[data-test="inventory-item-name"]');
+    await expect(titlesLocator.first()).toBeVisible();
+
+    const actualTitles = await titlesLocator.allInnerTexts();
+    const expectedSortedTitles = [...actualTitles].sort((a, b) => b.localeCompare(a));
+
+    expect(actualTitles).toEqual(expectedSortedTitles);
 })

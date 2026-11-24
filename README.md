@@ -69,14 +69,11 @@ J'ai mis en place Playwright via le tutoriel officiel du site (avec l'extension 
 - **When :** L'utilisateur ajoute deux produits au panier, ouvre le panier, lance la validation de commande (*Checkout*), renseigne ses informations de livraison, poursuit vers le récapitulatif puis finalise la commande.
 - **Then :** La commande est confirmée et la page de confirmation de commande s'affiche à l'écran.
 
-### Cas de test 7 : Flux de navigation complet avec ajout, retrait et déconnexion
-- **Given :** L'utilisateur est connecté sur le site en tant que `standard_user` et la page des produits disponibles s'affiche.
-- **When :** L'utilisateur ajoute un produit au panier, retire ce produit du panier, puis ouvre le menu latéral et clique sur la déconnexion (*Logout*).
-- **Then :** Le panier est vide et l'utilisateur est redirigé vers la page de connexion `https://www.saucedemo.com/`.
 
 ---
 
 ## Glossaire et modélisation du DSL
+Bon l'as j'avoue je n'ai pas trop compris la modélisation en DSL, j'i:magine que c'est super important mais si vous pouvez repasser sur ça en cours/Tp ça serait top !
 
 ### Vocabulaire métier (cohérence des termes)
 * **Entités :** `produit`, `panier`, `utilisateur` (`user`).
