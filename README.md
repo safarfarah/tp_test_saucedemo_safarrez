@@ -1,6 +1,6 @@
 # Rendu — Tests E2E sur le cas de saucedemo.com
 
-**Binôme :** SAFAR REMALI Farah et ?
+**Binôme :** SAFAR REMALI Farah et Aymen BOUNOUB
 
 ---
 
@@ -85,24 +85,6 @@ Bon l'as j'avoue je n'ai pas trop compris la modélisation en DSL, j'i:magine qu
   * `removeFromCart(productLabel: string): Promise<void>`
 * **Perceptions :**
   * `getPerceivedProducts(): Promise<string[]>`
-
----
-
-
-## Consignes de rendu (Mercredi 25 novembre à 8h)
-
-* **Dépôt GitHub :** Ajouter `AlexDmr` parmi les membres du dépôt.
-* **`README.md` :**
-  * Indiquer les noms des membres du binôme.
-  * Expliquer la stratégie de test. => Done
-* **Scénarios et cas de test :**
-  * Liste des scénarios (en français ou en anglais). => done ? at least a bit of them
-  * Correspondance entre chaque scénario et son cas de test implémenté en TypeScript.
-  * Justification des choix de tests (stratégie de production des cas de test).
-* **Description du DSL de test :**
-  * Correspondances avec les tâches et les concepts (même niveau d'abstraction).
-  * Présentation de l'interface du DSL (TypeScript) ou de la bibliothèque de fonctions.
-  * Explication de la stratégie d'implémentation de ce DSL.
 
 ---
 
